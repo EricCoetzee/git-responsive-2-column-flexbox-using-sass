@@ -1,0 +1,22 @@
+/*For flexCenter*/
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+/*for dark theme*/
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background-color: darken($primary-color, 100%);
+        color: darken($text-color, 100%);
+    }
+}
+
+/*for small screens*/
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}

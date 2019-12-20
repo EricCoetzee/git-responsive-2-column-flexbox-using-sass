@@ -1,0 +1,6 @@
+/* Function Partials from _functions.scss*/
+
+ /*way to shorten map.get($map: , $key: );*/
+ @function weight($weight-name){
+     @return map-get($font-weights, $weight-name)
+ }

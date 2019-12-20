@@ -1,0 +1,76 @@
+/* Sass Imports*/
+/* Variable Partials from _variables.scss*/
+/* Reset Partials from _resets.scss*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Map Partials from _map.scss*/
+/* Function Partials from _functions.scss*/
+/*way to shorten map.get($map: , $key: );*/
+/*For flexCenter*/
+/*for dark theme*/
+/*for small screens*/
+/*Sass Functions*/
+/*Sass in Action*/
+body {
+  /* Color from _variables.scss*/
+  background: #fff;
+  color: #ff66c4;
+  margin: 10px;
+}
+
+.flex-container {
+  /*flexCenter from _mixin.scss */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 98%;
+  margin: 0 auto;
+  /*Nested HTML div with class="logo_div". See position!*/
+  /*mixin for mobile friendly devices*/
+}
+
+.flex-container .div_one {
+  /*Function from _function.scss*/
+  font-weight: 650;
+  background-color: #c7d0d8;
+  width: 90%;
+  margin: 2px 2px;
+  text-align: center;
+  line-height: 75px;
+}
+
+.flex-container .div_one:hover {
+  /*Nested inside of .logo_div*/
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*class for theme mixin*/
+.light {
+  background-color: black;
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */
